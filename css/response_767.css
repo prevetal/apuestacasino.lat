@@ -1,0 +1,612 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 15px 48px 15px 16px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 15px;
+    }
+
+
+    .accordion_item .data
+    {
+        margin-top: 0;
+        padding: 0 16px 16px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .scroll
+    {
+        padding: 24px 20px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .logo
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .page_title
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside.mob .banner
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------------
+        First section
+    --------------------*/
+    .first_section .cont
+    {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 30px;
+    }
+
+
+    .first_section .text_block
+    {
+        font-size: 12px;
+        line-height: 20px;
+
+        width: 65%;
+        margin-top: 16px;
+    }
+
+
+    .first_section .img,
+    .first_section .img.right
+    {
+        right: 0;
+        left: auto;
+
+        height: 200px;
+
+        transform: translateX(30%);
+    }
+
+
+    .first_section .img.right.big_offset
+    {
+        transform: translateX(52%);
+    }
+
+
+
+    /*-------------------
+        Forecast head
+    -------------------*/
+    .forecast_head .info > *
+    {
+        min-height: 40px;
+        padding-bottom: 7px;
+    }
+
+    .forecast_head .info > * + *
+    {
+        margin-top: 7px;
+    }
+
+
+    .forecast_head .author .label
+    {
+        width: auto;
+    }
+
+
+    .forecast_head .author .name
+    {
+        font-size: 16px;
+
+        width: auto;
+        margin-top: 0;
+    }
+
+
+
+    /*-------------------
+        Forecast info
+    -------------------*/
+    .forecast_info .coefficients
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .forecast_info .coefficients > *
+    {
+        padding-left: 20px;
+    }
+
+
+
+    .forecast_info .bookmaker
+    {
+        padding: 12px 18px;
+    }
+
+
+    .forecast_info .bookmaker .logo
+    {
+        order: 1;
+
+        width: 189px;
+        height: 56px;
+    }
+
+
+    .forecast_info .bookmaker .coefficient
+    {
+        order: 2;
+
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+
+    .forecast_info .bookmaker .name
+    {
+        order: 2;
+
+        width: calc(100% - 66px);
+        margin-top: 10px;
+    }
+
+
+    .forecast_info .bookmaker .bonus
+    {
+        order: 1;
+
+        width: calc(100% - 202px);
+        height: 56px;
+        padding: 6px;
+    }
+
+
+    .forecast_info .bookmaker .bonus .val
+    {
+        margin-top: 5px;
+    }
+
+
+    .forecast_info .bookmaker .link
+    {
+        order: 3;
+
+        margin-top: 10px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .articles .row > *,
+    .articles .row > *.middle,
+    .articles .row > *.big
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+    .articles .article .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .articles .article.big .thumb,
+    .articles .article.big .info + .thumb
+    {
+        width: 100%;
+        min-height: 0;
+        padding-bottom: 58.684%;
+
+        border-radius: 5px 5px 0 0;
+    }
+
+
+    .articles .article.big .info
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .articles .article.big .name
+    {
+        font-size: 20px;
+
+        margin-bottom: 14px;
+    }
+
+
+    .articles .article.big .date,
+    .articles .article.big .comments_count,
+    .articles .article.big .views
+    {
+        font-size: 14px;
+    }
+
+
+    .articles .article.big .date .icon,
+    .articles .article.big .comments_count .icon,
+    .articles .article.big .views .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .articles .article.big .desc
+    {
+        margin-top: 14px;
+    }
+
+
+
+    /*------------------
+        Article head
+    ------------------*/
+    .article_head .info > *
+    {
+        min-height: 40px;
+        padding-bottom: 7px;
+    }
+
+    .article_head .info > * + *
+    {
+        margin-top: 7px;
+    }
+
+
+    .article_head .author .label
+    {
+        width: auto;
+    }
+
+
+    .article_head .author .name
+    {
+        font-size: 16px;
+
+        width: auto;
+        margin-top: 0;
+    }
+
+
+
+    /*-------------
+        Bonuses
+    -------------*/
+    .bonuses .row
+    {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .bonuses .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Bookmakers
+    ----------------*/
+    .bookmakers .data .col_left
+    {
+        width: 100%;
+    }
+
+
+    .bookmakers .data .col_right
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .bookmakers .data .bonus
+    {
+        justify-content: flex-start;
+    }
+
+
+    .bookmakers .data .link
+    {
+        text-align: left;
+    }
+
+
+    .bookmakers .data .link a
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    .bookmakers .col_logo
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .bookmakers .col_info
+    {
+        width: calc(100% - 160px);
+    }
+
+    .bookmakers .col_payments,
+    .bookmakers .col_games
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria .row
+    {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .criteria .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------
+        Top bookmakers
+    --------------------*/
+    .top_bookmakers .item
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+
+        padding: 20px;
+    }
+
+
+    .top_bookmakers .item .logo
+    {
+        margin-right: 16px;
+    }
+
+
+    .top_bookmakers .item .info
+    {
+        width: calc(100% - 90px);
+    }
+
+
+    .top_bookmakers .item .number
+    {
+        position: absolute;
+        z-index: 3;
+        top: 9px;
+        left: 9px;
+
+        margin: 0;
+    }
+
+
+
+    /*--------------------
+        Bookmaker info
+    --------------------*/
+    .bookmaker_info .data .info
+    {
+        width: 100%;
+    }
+
+
+    .bookmaker_info .data .sep
+    {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+
+    .bookmaker_info .why
+    {
+        width: 100%;
+    }
+
+
+    .bookmaker_info .why .items
+    {
+        gap: 12px;
+    }
+
+
+
+    .bookmaker_info .features .val
+    {
+        width: calc(100% - 172px);
+    }
+
+
+
+    .bookmaker_info .anchors
+    {
+        width: 100%;
+    }
+
+
+
+    .bookmaker_info .banner
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .bookmaker_info .banner img
+    {
+        height: auto;
+    }
+
+
+
+    /*------------------
+        Bonus banner
+    ------------------*/
+    .bonus_banner .data
+    {
+        padding: 24px;
+    }
+
+
+    .bonus_banner .title
+    {
+        margin-bottom: 100px;
+        padding-right: 100px;
+    }
+
+
+    .bonus_banner .img
+    {
+        top: 24px;
+        bottom: auto;
+
+        height: 180px;
+    }
+
+
+
+    /*--------------------
+        Pluses/Minuses
+    --------------------*/
+    .pluses_minuses .row > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo
+    {
+        text-align: center;
+    }
+
+
+    footer .menu
+    {
+        flex-direction: column;
+        order: 3;
+
+        width: 100%;
+        margin-top: 26px;
+
+        text-align: center;
+
+        gap: 12px;
+    }
+
+
+    footer .menu_item
+    {
+        width: 100%;
+    }
+
+
+    footer .langs
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

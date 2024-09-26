@@ -1,0 +1,653 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 260px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 24px);
+    }
+
+
+    .content_flex .content > * + *
+    {
+        margin-top: 48px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 16px 48px 16px 24px;
+    }
+
+
+    .accordion_item .data
+    {
+        margin-top: -4px;
+        padding: 0 48px 16px 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 20px 0;
+    }
+
+
+    header .logo
+    {
+        font-size: 20px;
+    }
+
+
+    header .menu
+    {
+        gap: 24px;
+    }
+
+
+    header .theme_btn
+    {
+        margin-left: 20px;
+    }
+
+
+    header .theme_btn,
+    header .theme_btn .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 32px;
+        padding-top: 16px;
+    }
+
+
+    .page_title
+    {
+        font-size: 32px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .message
+    {
+        padding: 20px 24px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+
+    aside .rating
+    {
+        padding: 24px;
+    }
+
+
+    aside .rating .title
+    {
+        padding-left: 0;
+    }
+
+
+    aside .rating .items > *
+    {
+        padding-left: 0;
+    }
+
+
+
+    /*--------------------
+        .First section
+    --------------------*/
+    .first_section .cont
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .first_section .data
+    {
+        width: 492px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 40px;
+    }
+
+
+    .first_section .text_block
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .first_section .img
+    {
+        left: 0;
+
+        margin-left: 0;
+    }
+
+
+    .first_section .img.right
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+
+    .first_section .img.right.big_offset
+    {
+        right: -220px;
+
+        margin-right: 0;
+    }
+
+
+
+    /*---------------
+        Forecasts
+    ---------------*/
+    .forecasts .swiper-slide
+    {
+        width: 350px;
+    }
+
+
+    .forecasts .forecast
+    {
+        height: 350px;
+        padding: 24px;
+    }
+
+
+    /*-------------------
+        Forecast head
+    -------------------*/
+    .forecast_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .forecast_head .image
+    {
+        width: calc(100% - 300px);
+        min-height: 360px;
+    }
+
+
+    .forecast_head .info
+    {
+        width: 300px;
+        padding: 24px;
+    }
+
+
+    .forecast_head .author .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        Forecast info
+    -------------------*/
+    .forecast_info .coefficients > *
+    {
+        font-size: 16px;
+
+        height: 48px;
+        padding-left: 16px;
+    }
+
+
+    .forecast_info .coefficients .logo img
+    {
+        width: 108px;
+        height: 48px;
+    }
+
+
+
+    .forecast_info .bookmaker .link
+    {
+        width: 100%;
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    .articles .row > *.middle
+    {
+        width: calc(66.666% - 24px);
+    }
+
+    .articles .row > *.big
+    {
+        width: calc(100% - 24px);
+    }
+
+
+    .articles .article .info
+    {
+        padding: 24px;
+    }
+
+
+
+    .articles .article.big .info
+    {
+        padding: 32px;
+    }
+
+
+    .articles .article.big .name
+    {
+        font-size: 24px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .articles .article.big .desc
+    {
+        margin-top: 20px;
+    }
+
+
+    .articles .article.big .link
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*------------------
+        Article head
+    ------------------*/
+    .article_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .article_head .image
+    {
+        width: calc(100% - 300px);
+        min-height: 360px;
+    }
+
+
+    .article_head .info
+    {
+        width: 300px;
+        padding: 24px;
+    }
+
+
+    .article_head .author .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------
+        Bonuses
+    -------------*/
+    .bonuses .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .bonuses .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*----------------
+        Bookmakers
+    ----------------*/
+    .bookmakers .titles
+    {
+        display: none;
+    }
+
+
+    .bookmakers .item
+    {
+        padding: 16px;
+
+        gap: 20px;
+    }
+
+
+    .bookmakers .item .col_bonus
+    {
+        font-size: 17px;
+    }
+
+
+    .bookmakers .item .col_games > *
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .bookmakers .item .col_games .icon
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+    .bookmakers .item .col_games .icon.machines
+    {
+        width: 24px;
+        height: 22px;
+    }
+
+
+    .bookmakers .item .spoler_btn
+    {
+        margin-top: 12px;
+    }
+
+
+    .bookmakers .data
+    {
+        padding: 16px;
+    }
+
+
+    .bookmakers .data .devices,
+    .bookmakers .data .link
+    {
+        margin-top: 16px;
+    }
+
+
+    .bookmakers .data .bonus
+    {
+        font-size: 17px;
+    }
+
+
+
+    .bookmakers .col_logo
+    {
+        width: 148px;
+        min-width: 148px;
+    }
+
+    .bookmakers .col_bonus
+    {
+        width: 205px;
+        min-width: 205px;
+    }
+
+    .bookmakers .col_payments,
+    .bookmakers .col_games
+    {
+        width: 136px;
+        min-width: 136px;
+    }
+
+
+    .bookmakers .col_actions
+    {
+        width: 212px;
+        min-width: 212px;
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .criteria .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .criteria .item
+    {
+        padding: 20px;
+    }
+
+
+
+    /*--------------------
+        Bookmaker info
+    --------------------*/
+    .bookmaker_info .data .info
+    {
+        width: calc(100% - 257px);
+    }
+
+
+    .bookmaker_info .data .logo
+    {
+        width: 192px;
+        height: 116px;
+    }
+
+
+    .bookmaker_info .data .logo + *
+    {
+        width: calc(100% - 216px);
+    }
+
+
+    .bookmaker_info .data .devices
+    {
+        margin-top: 16px;
+    }
+
+
+    .bookmaker_info .why
+    {
+        width: 208px;
+    }
+
+
+
+    .bookmaker_info .features
+    {
+        margin-bottom: 24px;
+        padding: 20px;
+    }
+
+
+
+    .bookmaker_info .anchors
+    {
+        width: 260px;
+        padding: 20px;
+    }
+
+
+
+    .bookmaker_info .banner
+    {
+        width: calc(100% - 284px);
+    }
+
+
+
+    .bookmaker_info .link
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------------
+        Bonus banner
+    ------------------*/
+    .bonus_banner .data
+    {
+        padding: 32px;
+    }
+
+
+    .bonus_banner .img
+    {
+        right: 24px;
+        bottom: 24px;
+
+        height: 248px;
+    }
+
+
+
+    /*--------------------
+        Pluses/Minuses
+    --------------------*/
+    .pluses_minuses .row
+    {
+        gap: 24px;
+    }
+
+
+    .pluses_minuses .row > *
+    {
+        width: calc(50% - 12px);
+        padding: 24px;
+    }
+
+
+    .pluses_minuses .items
+    {
+        gap: 12px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .link
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 24px 0;
+    }
+
+
+    footer .logo
+    {
+        font-size: 20px;
+    }
+
+
+    footer .menu
+    {
+        gap: 24px;
+    }
+}

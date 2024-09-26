@@ -1,0 +1,430 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 100%;
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .swiper-button-prev
+    {
+        right: 48px;
+    }
+
+
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 19;
+        top: 0;
+        right: 100%;
+        left: auto;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 0;
+
+        transition: transform .3s linear;
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    header .scroll
+    {
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 40px 16px;
+
+        border-top: 1px solid rgba(0, 0, 0, .12);
+
+        overscroll-behavior-y: contain;
+    }
+
+
+    header .logo,
+    header .theme_btn
+    {
+        display: none;
+    }
+
+
+    header .menu
+    {
+        flex-direction: column;
+        order: 2;
+
+        width: 100%;
+        margin-top: 40px;
+
+        gap: 25px;
+    }
+
+
+    header .menu_item > a
+    {
+        font-size: 18px;
+    }
+
+
+    header .langs
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        display: none;
+    }
+
+
+    aside.mob
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    aside.mob .rating
+    {
+        width: 100%;
+    }
+
+
+    aside.mob .banner
+    {
+        width: calc(50% - 12px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        font-size: 28px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*--------------------
+        First section
+    --------------------*/
+    .first_section .data
+    {
+        width: 65%;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 36px;
+    }
+
+
+    .first_section .text_block
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+
+        margin-top: 20px;
+
+        -webkit-line-clamp: 5;
+    }
+
+
+    .first_section .text_block.show
+    {
+        display: block;
+
+        -webkit-line-clamp: 0;
+    }
+
+
+    .first_section .mob_spoler_btn
+    {
+        display: block;
+    }
+
+
+    .first_section .img
+    {
+        height: 280px;
+
+        transform: translateX(-30%);
+    }
+
+
+    .first_section .img.right
+    {
+        right: 0;
+
+        transform: translateX(30%);
+    }
+
+
+    .first_section .img.right.big_offset
+    {
+        right: 0;
+
+        transform: translateX(45%);
+    }
+
+
+
+    /*-------------------
+        Forecast head
+    -------------------*/
+    .forecast_head .image
+    {
+        width: 100%;
+        min-height: 226px;
+        padding-bottom: 45%;
+    }
+
+
+    .forecast_head .info
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *,
+    .articles .row > *.middle
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .article .info
+    {
+        padding: 24px;
+    }
+
+
+
+    .articles .article.big .info
+    {
+        padding: 24px;
+    }
+
+
+    .articles .article.big .name
+    {
+        font-size: 22px;
+    }
+
+
+    .articles .article.big .desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .articles .article.big .link
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------------
+        Article head
+    ------------------*/
+    .article_head .image
+    {
+        width: 100%;
+        min-height: 226px;
+        padding-bottom: 45%;
+    }
+
+
+    .article_head .info
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Bonuses
+    -------------*/
+    .bonuses .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*----------------
+        Bookmakers
+    ----------------*/
+    .bookmakers .item
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .bookmakers .col_info
+    {
+        width: 200px;
+    }
+
+
+    .bookmakers .item .col_bonus
+    {
+        font-size: 19px;
+    }
+
+
+    .bookmakers .data .bonus
+    {
+        font-size: 19px;
+    }
+
+
+
+    .bookmakers .col_bonus
+    {
+        order: 2;
+
+        width: 100%;
+        min-width: 0;
+    }
+
+    .bookmakers .col_payments,
+    .bookmakers .col_games
+    {
+        width: auto;
+        min-width: 0;
+    }
+
+    .bookmakers .col_actions
+    {
+        order: 3;
+
+        width: 100%;
+        min-width: 0;
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .logo
+    {
+        font-size: 24px;
+
+        width: 100%;
+        margin-bottom: 26px;
+    }
+}
