@@ -101,7 +101,7 @@ input[type=number]
 -------------------*/
 :root
 {
-    --bg: #f2f2f2;
+    --bg: #fff;
     --sidebar_width: 277px;
     --scroll_width: 17px;
     --text_color: #000;
@@ -243,12 +243,6 @@ button
 }
 
 
-.content_flex .content > * + *
-{
-    margin-top: 52px;
-}
-
-
 .content_flex .content > *:first-child
 {
     margin-top: 0;
@@ -257,13 +251,6 @@ button
 .content_flex .content > *:last-child
 {
     margin-bottom: 0;
-}
-
-
-
-.block
-{
-    margin-bottom: 64px;
 }
 
 
@@ -770,6 +757,16 @@ aside .banner img
     padding-top: 15px;
 }
 
+.page_head.small_m
+{
+    margin-bottom: 21px;
+}
+
+.page_head.middle_m
+{
+    margin-bottom: 32px;
+}
+
 
 
 .breadcrumbs
@@ -828,17 +825,6 @@ aside .banner img
 /*----------------
     Block head
 ----------------*/
-.block_head
-{
-    margin-bottom: 24px;
-}
-
-.block_head.big_m
-{
-    margin-bottom: 32px;
-}
-
-
 .block_head .title
 {
     font-size: var(--font_size_title);
@@ -865,6 +851,8 @@ aside .banner img
 .text_block
 {
     line-height: 157%;
+
+    text-align: justify;
 }
 
 
@@ -877,6 +865,11 @@ aside .banner img
 .text_block > *
 {
     margin-bottom: 15px;
+}
+
+.text_block > *.small_m
+{
+    margin-bottom: 10px;
 }
 
 
@@ -898,6 +891,12 @@ aside .banner img
     line-height: 157%;
 
     color: #6da544;
+}
+
+
+.text_block h2 + *
+{
+    margin-top: 0 !important;
 }
 
 
@@ -941,7 +940,7 @@ aside .banner img
     display: block;
     overflow: hidden;
 
-    padding-left: 20px;
+    padding-left: 22px;
 
     list-style-type: none;
 }
@@ -950,12 +949,12 @@ aside .banner img
 {
     position: absolute;
     top: 9px;
-    left: 5px;
+    left: 9px;
 
     display: block;
 
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
 
     content: '';
 
@@ -977,7 +976,7 @@ aside .banner img
     display: block;
     overflow: hidden;
 
-    padding-left: 20px;
+    padding-left: 22px;
 
     list-style-type: none;
 }
@@ -987,12 +986,33 @@ aside .banner img
 {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 6px;
 
     content: counter(li) '.';
     counter-increment: li;
 }
 
+
+.text_block ol ol
+{
+    font-size: 12px;
+    line-height: 138%;
+
+    padding: 10px 0 10px 4px;
+
+    counter-reset: sub_li;
+}
+
+.text_block ol ol > li
+{
+    padding-left: 26px;
+}
+
+.text_block ol ol > li:before
+{
+    content: counter(li) '.' counter(sub_li) '. ';
+    counter-increment: sub_li;
+}
 
 
 .text_block .coefficients
@@ -1034,6 +1054,8 @@ aside .banner img
 .first_section
 {
     position: relative;
+
+    margin-bottom: 47px;
 
     background: linear-gradient(0deg, #fff 0%, #f2f2f2 100%);
 }
@@ -1081,6 +1103,12 @@ aside .banner img
     padding-bottom: 69px;
 }
 
+.first_section .cont.small_p
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 
 .first_section .data
 {
@@ -1104,6 +1132,12 @@ aside .banner img
 }
 
 
+.first_section .title br
+{
+    display: none;
+}
+
+
 .first_section .text_block
 {
     font-size: 15px;
@@ -1112,11 +1146,14 @@ aside .banner img
     width: 545px;
     max-width: 100%;
     margin-top: 22px;
+
+    text-align: left;
 }
 
 
 .first_section .mob_spoler_btn
 {
+    font-size: 14px;
     font-weight: 700;
     line-height: 23px;
 
@@ -1147,6 +1184,18 @@ aside .banner img
 /*----------------
     Bookmakers
 ----------------*/
+.bookmakers
+{
+    margin-bottom: 49px;
+}
+
+
+.bookmakers .block_head
+{
+    margin-bottom: 42px;
+}
+
+
 .bookmakers .titles
 {
     font-size: 15px;
@@ -1279,7 +1328,7 @@ aside .banner img
     font-size: 12px;
     line-height: 122%;
 
-    width: 156px;
+    width: 189px;
     max-width: 100%;
     margin-top: 9px;
 }
@@ -1442,8 +1491,6 @@ aside .banner img
 
 .bookmakers .data .col_right
 {
-    width: 237px;
-    max-width: 100%;
     margin-left: auto;
 }
 
@@ -1511,7 +1558,7 @@ aside .banner img
 {
     margin-top: 20px;
 
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -1553,8 +1600,8 @@ aside .banner img
 .bookmakers .col_payments,
 .bookmakers .col_games
 {
-    width: 164px;
-    min-width: 164px;
+    width: 171px;
+    min-width: 171px;
 }
 
 .bookmakers .col_actions
@@ -1568,6 +1615,18 @@ aside .banner img
 /*--------------
     Criteria
 --------------*/
+.criteria
+{
+    margin-bottom: 59px;
+}
+
+
+.criteria .block_head
+{
+    margin-bottom: 23px;
+}
+
+
 .criteria .row
 {
     align-content: stretch;
@@ -1626,6 +1685,18 @@ aside .banner img
 /*--------------------
     Top bookmakers
 --------------------*/
+.top_bookmakers
+{
+    margin-bottom: 29px;
+}
+
+
+.top_bookmakers .block_head
+{
+    margin-bottom: 25px;
+}
+
+
 .top_bookmakers .list
 {
     counter-reset: number;
@@ -1720,6 +1791,8 @@ aside .banner img
     line-height: 157%;
 
     margin-top: 1px;
+
+    text-align: justify;
 }
 
 
@@ -1727,6 +1800,18 @@ aside .banner img
 /*-------------
     Bonuses
 -------------*/
+.bonuses
+{
+    margin-bottom: 59px;
+}
+
+
+.bonuses .block_head
+{
+    margin-bottom: 28px;
+}
+
+
 .bonuses .row
 {
     align-content: stretch;
@@ -1929,6 +2014,12 @@ aside .banner img
 }
 
 
+.bonuses .mob_banner
+{
+    display: none;
+}
+
+
 .bonuses .banner img
 {
     display: block;
@@ -1943,6 +2034,12 @@ aside .banner img
 /*--------------
     Articles
 --------------*/
+.articles
+{
+    margin-bottom: 68px;
+}
+
+
 .articles .row
 {
     align-content: stretch;
@@ -2213,6 +2310,23 @@ aside .banner img
 /*---------------
     Forecasts
 ---------------*/
+.forecasts
+{
+    margin-bottom: 66px;
+}
+
+.forecasts.big_m
+{
+    margin-bottom: 73px;
+}
+
+
+.forecasts .block_head
+{
+    margin-bottom: 32px;
+}
+
+
 .forecasts .swiper
 {
     overflow: visible !important;
@@ -2261,7 +2375,7 @@ aside .banner img
 
 .forecasts .forecast.football
 {
-    background: url(../images/bg_foercast_football.png) 50%/cover no-repeat #fff;
+    background: url(../images/bg_foercast_football.png) 50%/100% 100% no-repeat;
 }
 
 .forecasts .forecast.mma
@@ -2271,7 +2385,7 @@ aside .banner img
 
 .forecasts .forecast.basketball
 {
-    background: url(../images/bg_foercast_basketball.png) 50%/cover no-repeat #fff;
+    background: url(../images/bg_foercast_basketball.png) 50%/100% 100% no-repeat;
 }
 
 
@@ -2389,7 +2503,7 @@ aside .banner img
 }
 
 
-.forecasts .forecast .coefficients span
+.forecasts .forecast .coefficients .green
 {
     color: #6da544;
 }
@@ -2563,6 +2677,12 @@ aside .banner img
 /*-------------------
     Forecast info
 -------------------*/
+.forecast_info
+{
+    margin-bottom: 50px;
+}
+
+
 .forecast_info .coefficients
 {
     display: flex;
@@ -2570,6 +2690,9 @@ aside .banner img
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
+
+    width: 854px;
+    max-width: 100%;
 
     gap: 10px;
 }
@@ -2726,7 +2849,7 @@ aside .banner img
 ------------------*/
 .article_head
 {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 
@@ -2861,9 +2984,26 @@ aside .banner img
 
 
 
+/*------------------
+    Article info
+------------------*/
+.article_info
+{
+    margin-bottom: 50px;
+}
+
+
+
 /*--------------------
     Bookmaker info
 --------------------*/
+.bookmaker_page
+{
+    margin-bottom: 73px;
+}
+
+
+
 .bookmaker_info .data
 {
     display: flex;
@@ -2873,7 +3013,7 @@ aside .banner img
     justify-content: space-between;
 
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 20px 31px 20px 20px;
 
     color: #000;
     border-radius: 5px;
@@ -2889,7 +3029,7 @@ aside .banner img
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: calc(100% - 308px);
+    width: calc(100% - 297px);
 }
 
 
@@ -2992,6 +3132,8 @@ aside .banner img
 .bookmaker_info .data .sep
 {
     width: 1px;
+    margin-right: auto;
+    margin-left: 25px;
 
     border-radius: 5px;
     background: #dcdfe8;
@@ -3000,6 +3142,8 @@ aside .banner img
 
 .bookmaker_info .why
 {
+    align-self: center;
+
     width: 232px;
     max-width: 100%;
 }
@@ -3187,13 +3331,19 @@ aside .banner img
 /*------------------
     Bonus banner
 ------------------*/
+.bonus_banner
+{
+    margin-top: 41px;
+}
+
+
 .bonus_banner .data
 {
     position: relative;
 
     display: block;
 
-    padding: 53px 45px;
+    padding: 54px 45px;
 
     text-decoration: none;
 
@@ -3215,6 +3365,8 @@ aside .banner img
 
 .bonus_banner .text_block
 {
+    line-height: 122%;
+
     width: 450px;
     max-width: 100%;
 }
@@ -3257,10 +3409,22 @@ aside .banner img
 }
 
 
+.bonus_banner + .text_block
+{
+    margin-top: 41px;
+}
+
+
 
 /*--------------------
     Pluses/Minuses
 --------------------*/
+.pluses_minuses
+{
+    margin-top: 46px;
+}
+
+
 .pluses_minuses .row
 {
     align-content: stretch;
@@ -3335,6 +3499,24 @@ aside .banner img
 /*---------
     FAQ
 ---------*/
+.FAQ
+{
+    margin-bottom: 70px;
+}
+
+
+.content .FAQ
+{
+    margin-top: 52px;
+}
+
+
+.FAQ .block_head
+{
+    margin-bottom: 20px;
+}
+
+
 .FAQ .link
 {
     margin-top: 55px;
@@ -3355,6 +3537,22 @@ aside .banner img
     color: #fff;
     border-radius: 5px;
     background: #f27216;
+}
+
+
+
+/*----------------
+    Conclusion
+----------------*/
+.conclusion
+{
+    margin-bottom: 58px;
+}
+
+
+.conclusion .block_head
+{
+    margin-bottom: 12px;
 }
 
 
@@ -3592,9 +3790,19 @@ footer .langs .btn .icon
 }
 
 
+.dark_theme .forecasts .forecast.football
+{
+    background-image: url(../images/bg_foercast_football_dark_theme.png);
+}
+
 .dark_theme .forecasts .forecast.mma
 {
     background-image: url(../images/bg_foercast_mma_dark_theme.png);
+}
+
+.dark_theme .forecasts .forecast.basketball
+{
+    background-image: url(../images/bg_foercast_basketball_dark_theme.png);
 }
 
 
@@ -3612,7 +3820,7 @@ footer .langs .btn .icon
 }
 
 
-.dark_theme .forecasts .forecast .coefficients span
+.dark_theme .forecasts .forecast .coefficients .green
 {
     color: #000;
 }

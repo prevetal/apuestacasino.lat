@@ -38,6 +38,23 @@
 
 
     /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 10px 48px 13px 17px;
+    }
+
+
+    .accordion_item .data
+    {
+        margin-top: -4px;
+        padding: 0 40px 15px 17px;
+    }
+
+
+
+    /*---------------
         Load more
     ---------------*/
     .load_more
@@ -56,9 +73,17 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head.small_m
+    {
+        margin-bottom: 20px;
+    }
+
+
     .page_title
     {
         font-size: 22px;
+
+        margin-top: 34px;
     }
 
 
@@ -66,11 +91,9 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head.big_m
+    .block_head .title
     {
-        margin-bottom: 28px;
-
-        text-align: center;
+        padding-right: 24px;
     }
 
 
@@ -88,10 +111,16 @@
     /*--------------------
         First section
     --------------------*/
+    .first_section
+    {
+        margin-bottom: 37px;
+    }
+
+
     .first_section .cont
     {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
 
 
@@ -99,8 +128,19 @@
     {
         font-size: 24px;
 
+        width: 56.5%;
+    }
+
+    .first_section .title.mob_big_w
+    {
         width: 301px;
         max-width: 100%;
+    }
+
+
+    .first_section .title br
+    {
+        display: block;
     }
 
 
@@ -108,24 +148,158 @@
     {
         line-height: 16px;
 
-        width: 55%;
+        width: 56.5%;
+        margin-top: 8px;
     }
 
 
     .first_section .img,
     .first_section .img.right
     {
-        height: 192px;
+        height: 220px;
 
-        transform: translateX(33.333%);
+        transform: translateX(18%) scale(-1, 1);
+    }
+
+    .first_section .bonuses_img,
+    .first_section .bonuses_img.right
+    {
+        transform: translateX(10%) scale(-1, 1);
     }
 
 
     .first_section .img.right.big_offset
     {
-        height: 168px;
+        height: 160px;
 
-        transform: translateX(52%);
+        transform: translateX(36%);
+    }
+
+
+    .first_section .img.forecasts_img
+    {
+        height: 180px;
+
+        transform: translateX(28%);
+    }
+
+
+
+    /*----------------
+        Bookmakers
+    ----------------*/
+    .bookmakers
+    {
+        margin-bottom: 38px;
+    }
+
+
+    .bookmakers .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .bookmakers .item
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+
+        gap: 12px 15px;
+    }
+
+
+    .bookmakers .col_info
+    {
+        width: calc(100% - 139px);
+    }
+
+
+    .bookmakers .item .col_bonus .icon,
+    .bookmakers .item .col_bonus b,
+    .bookmakers .data .bonus .icon,
+    .bookmakers .data .bonus b
+    {
+        color: #6da544;
+    }
+
+
+    .bookmakers .item .desc br
+    {
+        display: none;
+    }
+
+
+    .bookmakers .item .col_payments
+    {
+        display: none;
+    }
+
+
+    .bookmakers .data
+    {
+        padding: 25px 18px 20px;
+    }
+
+
+
+    /*--------------
+        Criteria
+    --------------*/
+    .criteria
+    {
+        margin-bottom: 38px;
+    }
+
+
+    .criteria .block_head
+    {
+        margin-bottom: 22px;
+    }
+
+
+    .criteria .item
+    {
+        font-size: 13px;
+
+        padding: 16px 24px 16px 22px;
+    }
+
+
+
+    /*--------------------
+        Top bookmakers
+    --------------------*/
+    .top_bookmakers
+    {
+        margin-bottom: 26px;
+    }
+
+
+    .top_bookmakers .block_head
+    {
+        margin-bottom: 26px;
+    }
+
+
+    .top_bookmakers .item
+    {
+        padding: 16px 16px 20px 20px;
+    }
+
+
+    .top_bookmakers .item .logo
+    {
+        margin-top: 5px;
+    }
+
+
+    .top_bookmakers .item .desc
+    {
+        font-size: 12px;
+        line-height: 127%;
+
+        margin-top: 2px;
     }
 
 
@@ -133,9 +307,26 @@
     /*---------------
         Forecasts
     ---------------*/
+    .forecasts
+    {
+        margin-bottom: 62px;
+    }
+
+    .forecasts.big_m
+    {
+        margin-bottom: 70px;
+    }
+
+
+    .forecasts .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
     .forecasts .swiper
     {
-        padding-bottom: 60px;
+        padding-bottom: 69px;
     }
 
 
@@ -143,15 +334,23 @@
     /*-------------------
         Forecast head
     -------------------*/
+    .forecast_head
+    {
+        margin-bottom: 30px;
+    }
+
+
     .forecast_head .info
     {
-        padding: 20px;
+        padding: 21px 32px 21px 30px;
     }
 
 
     .forecast_head .author .name
     {
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 122%;
     }
 
 
@@ -169,15 +368,33 @@
     /*------------------
         Article head
     ------------------*/
+    .article_head
+    {
+        margin-bottom: 30px;
+    }
+
+
     .article_head .info
     {
-        padding: 20px;
+        padding: 21px 32px 21px 30px;
     }
 
 
     .article_head .author .name
     {
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 122%;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .text_block
+    {
+        text-align: left;
     }
 
 
@@ -228,5 +445,53 @@
     .pluses_minuses .row > *
     {
         padding: 20px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .FAQ .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+
+    /*----------------
+        Conclusion
+    ----------------*/
+    .conclusion
+    {
+        margin-bottom: 55px;
+    }
+
+
+    .conclusion .block_head
+    {
+        margin-bottom: 14px;
+    }
+
+
+
+    /*-------------
+        Bonuses
+    -------------*/
+    .bonuses .banner
+    {
+        display: none;
+    }
+
+
+    .bonuses .mob_banner
+    {
+        display: block;
     }
 }

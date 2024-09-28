@@ -40,16 +40,6 @@
 
 
 
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
-    {
-        padding: 24px;
-    }
-
-
-
     /*------------
         Header
     ------------*/
@@ -196,7 +186,7 @@
     --------------------*/
     .first_section .data
     {
-        width: 65%;
+        width: 70%;
     }
 
 
@@ -277,6 +267,21 @@
     }
 
 
+    .forecast_head .author .label
+    {
+        width: auto;
+    }
+
+
+    .forecast_head .author .name
+    {
+        font-size: 16px;
+
+        width: auto;
+        margin-top: 0;
+    }
+
+
 
     /*--------------
         Articles
@@ -337,6 +342,21 @@
     }
 
 
+    .article_head .author .label
+    {
+        width: auto;
+    }
+
+
+    .article_head .author .name
+    {
+        font-size: 16px;
+
+        width: auto;
+        margin-top: 0;
+    }
+
+
 
     /*-------------
         Bonuses
@@ -359,7 +379,7 @@
 
     .bookmakers .col_info
     {
-        width: 200px;
+        width: 220px;
     }
 
 
