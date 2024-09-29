@@ -101,7 +101,7 @@ input[type=number]
 -------------------*/
 :root
 {
-    --bg: url(../images/bg.png) 0 0 repeat #fff;
+    --bg: url(../images/bg.png) 0 0/562px auto repeat #fff;
     --sidebar_width: 277px;
     --scroll_width: 17px;
     --text_color: #000;
