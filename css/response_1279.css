@@ -23,12 +23,6 @@
     }
 
 
-    .content_flex .content > * + *
-    {
-        margin-top: 48px;
-    }
-
-
 
     /*---------------
         Load more
@@ -409,6 +403,12 @@
     }
 
 
+    .bookmakers .item .desc
+    {
+        width: 163px;
+    }
+
+
     .bookmakers .item .col_bonus
     {
         font-size: 17px;
@@ -467,10 +467,16 @@
         min-width: 148px;
     }
 
+    .bookmakers .col_info
+    {
+        margin-left: 0;
+    }
+
     .bookmakers .col_bonus
     {
         width: 205px;
         min-width: 205px;
+        margin-left: 0;
     }
 
     .bookmakers .col_payments,
@@ -478,6 +484,7 @@
     {
         width: 136px;
         min-width: 136px;
+        margin-left: 0;
     }
 
 
@@ -485,6 +492,7 @@
     {
         width: 212px;
         min-width: 212px;
+        margin-left: 0;
     }
 
 
@@ -601,6 +609,12 @@
     /*--------------------
         Pluses/Minuses
     --------------------*/
+    .pluses_minuses
+    {
+        margin-top: 30px;
+    }
+
+
     .pluses_minuses .row
     {
         gap: 24px;
@@ -624,6 +638,12 @@
     /*---------
         FAQ
     ---------*/
+    .content .FAQ
+    {
+        margin-top: 42px;
+    }
+
+
     .FAQ .link
     {
         margin-top: 40px;

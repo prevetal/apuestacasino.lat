@@ -871,7 +871,14 @@ aside .banner img
 
 .text_block > *.small_m
 {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
+}
+
+
+.text_block .small_w
+{
+    width: 831px;
+    max-width: 100%;
 }
 
 
@@ -1212,9 +1219,13 @@ aside .banner img
 
     padding-right: 30px;
     padding-bottom: 17px;
-    padding-left: 17px;
+}
 
-    gap: 32px;
+
+.bookmakers .titles .col_logo
+{
+    width: 187px;
+    min-width: 187px;
 }
 
 
@@ -1247,8 +1258,6 @@ aside .banner img
     justify-content: flex-start;
 
     padding: 17px 30px 17px 17px;
-
-    gap: 32px;
 }
 
 
@@ -1330,8 +1339,6 @@ aside .banner img
     font-size: 12px;
     line-height: 122%;
 
-    width: 189px;
-    max-width: 100%;
     margin-top: 9px;
 }
 
@@ -1591,25 +1598,36 @@ aside .banner img
 .bookmakers .col_info
 {
     width: 100%;
+    margin-left: 35px;
 }
 
 .bookmakers .col_bonus
 {
     width: 225px;
     min-width: 225px;
+    margin-left: 40px;
 }
 
-.bookmakers .col_payments,
+.bookmakers .col_payments
+{
+    width: 164px;
+    min-width: 164px;
+    margin-left: 62px;
+}
+
+
 .bookmakers .col_games
 {
-    width: 171px;
-    min-width: 171px;
+    width: 168px;
+    min-width: 168px;
+    margin-left: 60px;
 }
 
 .bookmakers .col_actions
 {
     width: 237px;
     min-width: 237px;
+    margin-left: 32px;
 }
 
 
@@ -3663,7 +3681,7 @@ footer .langs .btn .icon
 ----------------*/
 .dark_theme:root
 {
-    --bg: #1a2137;
+    --bg: url(../images/bg_dark.png) 0 0/562px auto repeat #1a2137;
     --text_color: #fff;
 }
 

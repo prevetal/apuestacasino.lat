@@ -407,7 +407,7 @@
     --------------*/
     .criteria .row
     {
-        margin-bottom: 20px;
+        margin-bottom: -20px;
         margin-left: 0;
     }
 
